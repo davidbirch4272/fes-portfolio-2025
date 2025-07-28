@@ -69,19 +69,19 @@ export default function Header() {
 
       <motion.div initial="hidden" animate={controls} variants={blurVariants} transition={{ duration: 1, delay: 0.5 }} className="header--top">
         <h3>
-          <a href="/" target={"_blank"} rel="noopener noreferrer">
+          <a href="https://github.com/davidbirch4272#frontend-developer-and-designer" target={"_blank"} rel="noopener noreferrer">
             <ScrambleText shuffle delay={0.5}>
               GITHUB
             </ScrambleText>
           </a>
           <span className="header--hash">{"//"}</span>
-          <a href="/" target={"_blank"} rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/david-birch-063b791a1/" target={"_blank"} rel="noopener noreferrer">
             <ScrambleText shuffle delay={1}>
               LINKEDIN
             </ScrambleText>
           </a>
           <span className="header--hash">{"//"}</span>
-          <a href="/" target={"_blank"} rel="noopener noreferrer">
+          <a href="https://docs.google.com/document/d/1-EQfiiVIwIVx5J3F4ni2ccNuvF-ZvUnZ/edit?pli=1/" target={"_blank"} rel="noopener noreferrer">
             <ScrambleText shuffle delay={1.5}>
               RESUME
             </ScrambleText>

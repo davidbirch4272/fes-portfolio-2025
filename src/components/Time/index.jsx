@@ -3,7 +3,7 @@ import ScrambleText from "../ScrambleText"
 
 export default function Time() {
   // use Intl.DateTimeFormat().resolvedOptions(); to get your own timeZone too
-  const myTimeZone = "Australia/Sydney"
+  const myTimeZone = "America/New_York"
   const usersTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
   const myTimeZoneText = myTimeZone.split("/")[1]

@@ -40,7 +40,7 @@ export default function TechCard({ item }) {
     },
   }
 
-  return (
+  const cardContent = (
     <div ref={ref} className="workCard">
       <div className="workCard--head">
         <h3>
@@ -69,5 +69,12 @@ export default function TechCard({ item }) {
         </p>
       </div>
     </div>
+  )
+  return item.link ? (
+    <a href={item.link} target="_blank" rel="noopener noreferrer" className="workCard--link">
+      {cardContent}
+    </a>
+  ) : (
+    cardContent
   )
 }

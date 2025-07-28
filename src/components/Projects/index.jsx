@@ -29,25 +29,28 @@ export default function Projects() {
 
   const works = [
     {
-      client: "client name",
-      year: "2023",
-      img: work1,
-      title: "Revamping Global Lifestyle Brand.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      client: "Skinstric",
+      year: "2025",
+      img: work1,  
+      title: "A Skin Care Website With The Latest A.I. Technologies.",
+      detail: "Created a website that takes information from the user, including name, city and a photograph by selecting a file or by use of the camera and uploads these items to the API which then responds with demographic information.",
+      link:  "https://skinstric-drab.vercel.app/"
     },
     {
-      client: "client name",
-      year: "2023",
+      client: "Personal Project",
+      year: "2025",
       img: work2,
-      title: "Next generation Web Management System.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "An NFT Display Platform Website.",
+      detail: "Transformed a static NFT platform into a dynamic platform with details of users, cost, likes and more.",
+      link:  "https://davidbirch-internship.vercel.app/"
     },
     {
-      client: "client name",
-      year: "2023",
+      client: "Personal Project",
+      year: "2025",
       img: work3,
-      title: "Share your Life Stories. Generationally.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "A Custom Designed Website for Movies.",
+      detail: "Created a website for movies using an api with search bar and sorting capabilities.",
+      link:  "https://movies-react-style.vercel.app/"    
     },
   ]
 

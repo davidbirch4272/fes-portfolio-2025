@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+  import { useState, useEffect } from "react"
 import "./style.css"
 import BackgroundLines from "../BackgroundLines"
 import ParaWriting from "../ParaWriting"
@@ -22,9 +22,9 @@ export default function Footer() {
   const [sendStatus, setSendStatus] = useState({ processed: false, message: "", variant: "success" })
   const [hasAnimated, setHasAnimated] = useState(false)
   const [fieldValues, setFieldValues] = useState({
-    name: false,
-    email: false,
-    message: false,
+    name: "",
+    email: "",
+    message: "", 
   })
 
   const handleComplete = () => {
@@ -76,10 +76,10 @@ export default function Footer() {
     },
   ]
 
-  const handleInputClick = (stateKey) => {
+  const handleInputClick = (stateKey, value) => {
     setFieldValues({
       ...fieldValues,
-      [stateKey]: true,
+      [stateKey]: value,
     })
   }
 
@@ -90,7 +90,7 @@ export default function Footer() {
 
   const sendEmail = async () => {
     const requiredFields = ["name", "email", "message"]
-    const missingFields = requiredFields.filter((field) => !fieldValues[field])
+    const missingFields = requiredFields.filter((field) => !fieldValues[field].trim())
 
     if (missingFields.length > 0) {
       setSendStatus({ processed: true, variant: "error", message: "Not all fields were filled" })
@@ -111,8 +111,8 @@ export default function Footer() {
       console.log("trigger")
 
       const templateParams = {
-        name: fieldValues.name,
-        email: fieldValues.email,
+        user_name: fieldValues.name,
+        user_email: fieldValues.email,
         message: fieldValues.message,
       }
 
@@ -144,7 +144,24 @@ export default function Footer() {
           {inputFields.map((field, index) => (
             <motion.div key={index} initial="hidden" animate={controls} variants={opacityVariant} transition={{ duration: 1, delay: 0.5 * (index + 1) }} className="input--div">
               <label htmlFor={field.id}>{field.label}</label>
-              {field.type === "textarea" ? <textarea name={field.id} id={field.id} placeholder={field.placeholder} rows={field.rows} wrap={field.wrap} onClick={() => handleInputClick(field.stateKey)}></textarea> : <input type={field.type} name={field.id} id={field.id} placeholder={field.placeholder} onClick={() => handleInputClick(field.stateKey)} />}
+              {field.type === "textarea" ? 
+              <textarea 
+              name={field.id} 
+              id={field.id} 
+              placeholder={field.placeholder}
+              rows={field.rows} 
+              wrap={field.wrap} 
+              value={fieldValues[field.stateKey]}
+              onChange={(e) => handleInputClick(field.stateKey, e.target.value)}></textarea>
+               : 
+              
+              <input 
+              type={field.type} 
+              name={field.id} 
+              id={field.id} 
+              placeholder={field.placeholder} 
+              value={fieldValues[field.stateKey]}
+              onChange={(e) => handleInputClick(field.stateKey, e.target.value)} />}
               <motion.div
                 initial="hidden"
                 animate={controls}
@@ -177,7 +194,7 @@ export default function Footer() {
       </div>
 
       <motion.div initial="hidden" animate={controls} variants={opacityVariant} transition={{ duration: 1, delay: 2.5 }} className="footer--bottom" onAnimationComplete={() => handleComplete()}>
-        <p>Copyright © {new Date().getFullYear()} Zen Farhat</p>
+        <p>Copyright © {new Date().getFullYear()} David P. Birch</p>
         <p>
           <Time delay={3} />
         </p>

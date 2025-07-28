@@ -64,7 +64,8 @@ export default function About() {
 
         <motion.div initial="hidden" animate={controls} variants={opacityVariant} transition={{ duration: 1, delay: 2 }} onAnimationComplete={() => handleComplete()} className="about--detail">
           <p className="theme--detail--dark">
-            <ScrambleText delay={2}>Currently employed as a software engineer at Canva, I work on extremely difficult engineering problems every day in a team consisting of some of the most talented and experienced software engineers. Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</ScrambleText>
+            <ScrambleText delay={2}>Worked as a Frontend Developer & Support Staff at Frontend Simplified, where I am assisting others to become excellent Frontend Developers & Engineers focusing on frontend optimization techniques, advising students of best practices and thereby helping increasing the students portfolio by an average of 50%.  
+              Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</ScrambleText>
           </p>
         </motion.div>
 
