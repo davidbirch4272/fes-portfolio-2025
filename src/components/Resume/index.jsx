@@ -61,7 +61,7 @@ export default function Resume() {
           <div className="resume--grid--detail--data">
             <div className="resume--grid--detail--data--name">
               <h2>
-                <ParaWriting stagger={0.08} text={"David Bragg"} />
+                <ParaWriting stagger={0.08} text={"David Birch"} />
               </h2>
               <h4>
                 <ScrambleText shuffle delay={0}>
