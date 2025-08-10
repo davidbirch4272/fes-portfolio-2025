@@ -121,6 +121,7 @@ export default function Footer() {
       console.log("Email sent successfully:", response)
       setIsSending(false)
       setSendStatus({ processed: true, variant: "success", message: "Success!" })
+      setFieldValues({ name: "", email: "", message: "" })
     } catch (error) {
       console.error("Error sending email:", error)
       setIsSending(false)
