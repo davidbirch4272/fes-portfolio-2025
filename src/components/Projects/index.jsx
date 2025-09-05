@@ -10,6 +10,7 @@ import { useInView } from "react-intersection-observer"
 import work1 from "../../assets/Images/work1.png"
 import work2 from "../../assets/Images/work2.png"
 import work3 from "../../assets/Images/work3.png"
+import work4 from "../../assets/Images/work4.png"
 
 export default function Projects() {
   const controls = useAnimation()
@@ -52,6 +53,14 @@ export default function Projects() {
       detail: "Created a website for movies using an api with search bar and sorting capabilities.",
       link:  "https://movies-react-style.vercel.app/"    
     },
+  {
+      client: "Personal Project",
+      year: "2025",
+      img: work4,
+      title: "A Clone of the Popular Platform Netflix.",
+      detail: "Created a Netflix Clone with functional sign in & out and subscription capabilities.",
+      link:  "https://a-certain-movie-platform.vercel.app/"    
+    },  
   ]
 
   const opacityVariant = {
