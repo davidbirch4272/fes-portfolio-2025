@@ -11,6 +11,7 @@ import work1 from "../../assets/Images/work1.png"
 import work2 from "../../assets/Images/work2.png"
 import work3 from "../../assets/Images/work3.png"
 import work4 from "../../assets/Images/work4.png"
+import work5 from "../../assets/Images/work5.png"
 
 export default function Projects() {
   const controls = useAnimation()
@@ -61,6 +62,17 @@ export default function Projects() {
       detail: "Created a Netflix Clone with functional sign in & out and subscription capabilities.",
       link:  "https://a-certain-movie-platform.vercel.app/"    
     },  
+{
+      client: "Personal Project",
+      year: "2025",
+      img: work5,
+      title: "Deathie (My Band).",
+      detail: "Created a Website for the band with functional checkout features for buying CD's.",
+      link:  "https://deathie.com/"    
+    },  
+
+
+
   ]
 
   const opacityVariant = {
