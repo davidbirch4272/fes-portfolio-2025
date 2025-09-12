@@ -67,7 +67,7 @@ export default function Projects() {
       year: "2025",
       img: work5,
       title: "Deathie",
-      detail: "Created a Website for the band with functional checkout features for buying CD's.",
+      detail: "Created a Website for my band with functional checkout features for buying CD's.",
       link:  "https://deathie.com/"    
     },  
 
